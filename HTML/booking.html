@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Tickets - CINEMAWORLD</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Book Your Tickets</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <form id="bookingForm" class="booking-form">
+        <label for="name">Full Name:
+          <input type="text" name="name" required />
+        </label><br><br>
+
+        <label for="movie">Select Movie:</label>
+        <select name="movie" id="movie" required>
+          <option value="">-- Choose a movie --</option>
+          <option value="1917">1917</option>
+          <option value="Oppenheimer">Oppenheimer</option>
+          <option value="Dune">Dune</option>
+          <option value="Interstellar">Interstellar</option>
+          <option value="Inception">Inception</option>
+          <option value="Avatar: The Way of Water">Avatar: The Way of Water</option>
+          <option value="Top Gun: Maverick">Top Gun: Maverick</option>
+          <option value="Joker">Joker</option>
+          <option value="The Batman">The Batman</option>
+          <option value="Tenet">Tenet</option>
+          <option value="Everything Everywhere All at Once">Everything Everywhere All at Once</option>
+          <option value="Parasite">Parasite</option>
+          <option value="John Wick: Chapter 4">John Wick: Chapter 4</option>
+          <option value="The Whale">The Whale</option>
+          <option value="Ford v Ferrari">Ford v Ferrari</option>
+          <option value="The Revenant">The Revenant</option>
+          <option value="No Time to Die">No Time to Die</option>
+          <option value="The Dark Knight">The Dark Knight</option>
+          <option value="Black Panther: Wakanda Forever">Black Panther: Wakanda Forever</option>
+          <option value="Mission: Impossible – Dead Reckoning">Mission: Impossible – Dead Reckoning</option>
+        </select><br><br>
+
+        <label for="tickets">Tickets:
+          <input type="number" name="tickets" min="1" max="10" required />
+        </label><br><br>
+
+        <label for="date">Date:
+          <input type="date" name="date" required />
+        </label><br><br>
+
+        <label for="email">Email:
+          <input type="email" name="email" required />
+        </label><br><br>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+
+      <p id="responseMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CINEMAWORLD. All rights reserved.</p>
+  </footer>
+
+  <script src="../JS/booking.js"></script>
+</body>
+</html>
