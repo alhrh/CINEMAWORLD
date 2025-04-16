@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies - CINEMAWORLD</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Now Showing</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="movies.html">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Featured Movies</h2>
+      <div class="movie-grid">
+        <div class="movie-grid">
+
+            <div class="movie-card">
+              <img src="../Media/1917.jpg" alt="1917" onclick="openModal('1917')" />
+              <h3>1917</h3>
+              <p>Rating: 8.3/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/oppenheimer.jpg" alt="Oppenheimer" onclick="openModal('oppenheimer')" />
+              <h3>Oppenheimer</h3>
+              <p>Rating: 8.6/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/dune.jpg" alt="Dune" onclick="openModal('dune')" />
+              <h3>Dune</h3>
+              <p>Rating: 8.0/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/joker.jpg" alt="Joker" onclick="openModal('joker')" />
+              <h3>Joker</h3>
+              <p>Rating: 8.4/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/thebatman.jpg" alt="The Batman" onclick="openModal('thebatman')" />
+              <h3>The Batman</h3>
+              <p>Rating: 8.0/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/avatar2.jpg" alt="Avatar" onclick="openModal('avatar')" />
+              <h3>Avatar: The Way of Water</h3>
+              <p>Rating: 7.6/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/spiderman.jpg" alt="Spider-Man" onclick="openModal('spiderman')" />
+              <h3>Spider-Man: No Way Home</h3>
+              <p>Rating: 8.2/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/johnwick4.jpg" alt="John Wick" onclick="openModal('johnwick')" />
+              <h3>John Wick 4</h3>
+              <p>Rating: 7.8/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/everything.jpg" alt="Everything" onclick="openModal('everything')" />
+              <h3>Everything Everywhere All at Once</h3>
+              <p>Rating: 8.0/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/parasite.jpg" alt="Parasite" onclick="openModal('parasite')" />
+              <h3>Parasite</h3>
+              <p>Rating: 8.5/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/topgun.jpg" alt="Top Gun" onclick="openModal('topgun')" />
+              <h3>Top Gun: Maverick</h3>
+              <p>Rating: 8.3/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/interstellar.jpg" alt="Interstellar" onclick="openModal('interstellar')" />
+              <h3>Interstellar</h3>
+              <p>Rating: 8.7/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/tenet.jpg" alt="Tenet" onclick="openModal('tenet')" />
+              <h3>Tenet</h3>
+              <p>Rating: 7.3/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/knivesout.jpg" alt="Knives Out" onclick="openModal('knivesout')" />
+              <h3>Knives Out</h3>
+              <p>Rating: 7.9/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/lalaland.jpg" alt="La La Land" onclick="openModal('lalaland')" />
+              <h3>La La Land</h3>
+              <p>Rating: 8.0/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/whale.jpg" alt="The Whale" onclick="openModal('whale')" />
+              <h3>The Whale</h3>
+              <p>Rating: 7.7/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/fordvferrari.jpg" alt="Ford v Ferrari" onclick="openModal('ford')" />
+              <h3>Ford v Ferrari</h3>
+              <p>Rating: 8.1/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/revenant.jpg" alt="The Revenant" onclick="openModal('revenant')" />
+              <h3>The Revenant</h3>
+              <p>Rating: 8.0/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/notimetodie.jpg" alt="No Time to Die" onclick="openModal('notime')" />
+              <h3>No Time to Die</h3>
+              <p>Rating: 7.3/10</p>
+            </div>
+          
+            <div class="movie-card">
+              <img src="../Media/darkknight.jpg" alt="The Dark Knight" onclick="openModal('darkknight')" />
+              <h3>The Dark Knight</h3>
+              <p>Rating: 9.0/10</p>
+            </div>
+          
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CINEMAWORLD. All rights reserved.</p>
+  </footer>
+
+  <script src="../JS/script.js"></script>
+  <!-- Modal for 1917 -->
+<div id="modal-1917" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/1917.jpg" alt="1917 Poster" class="modal-img" />
+      <h2>1917</h2>
+      <p><strong>Rating:</strong> 8.3/10</p>
+      <p><strong>Year:</strong> 2019</p>
+      <p><strong>Story:</strong> Two British soldiers are sent across enemy lines during WWI to deliver a message that could save 1,600 men from a deadly trap.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>George MacKay</li>
+        <li>Dean-Charles Chapman</li>
+        <li>Colin Firth</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>3 Oscars (Best Cinematography, Best Visual Effects, Best Sound Mixing)</li>
+        <li>7 BAFTA Awards</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=YqNYrYUiMfg" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Oppenheimer -->
+  <div id="modal-oppenheimer" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/oppenheimer.jpg" alt="Oppenheimer Poster" class="modal-img" />
+      <h2>Oppenheimer</h2>
+      <p><strong>Rating:</strong> 8.6/10</p>
+      <p><strong>Year:</strong> 2023</p>
+      <p><strong>Story:</strong> The story of J. Robert Oppenheimer and the development of the atomic bomb during World War II.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Cillian Murphy</li>
+        <li>Emily Blunt</li>
+        <li>Matt Damon</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>Oscar Nominated</li>
+        <li>Multiple Critics Choice Awards</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Dune -->
+  <div id="modal-dune" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/dune.jpg" alt="Dune Poster" class="modal-img" />
+      <h2>Dune</h2>
+      <p><strong>Rating:</strong> 8.0/10</p>
+      <p><strong>Year:</strong> 2021</p>
+      <p><strong>Story:</strong> A noble family becomes embroiled in a war for control over the galaxy's most valuable asset.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Timothée Chalamet</li>
+        <li>Zendaya</li>
+        <li>Oscar Isaac</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>6 Oscars</li>
+        <li>Best Original Score</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=n9xhJrPXop4" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Joker -->
+  <div id="modal-joker" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/joker.jpg" alt="Joker Poster" class="modal-img" />
+      <h2>Joker</h2>
+      <p><strong>Rating:</strong> 8.4/10</p>
+      <p><strong>Year:</strong> 2019</p>
+      <p><strong>Story:</strong> The origin story of Joker, a mentally troubled man who turns to a life of crime and chaos in Gotham.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Joaquin Phoenix</li>
+        <li>Robert De Niro</li>
+        <li>Zazie Beetz</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>2 Oscars</li>
+        <li>Golden Lion at Venice Film Festival</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=zAGVQLHvwOY" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for The Batman -->
+  <div id="modal-thebatman" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/thebatman.jpg" alt="The Batman Poster" class="modal-img" />
+      <h2>The Batman</h2>
+      <p><strong>Rating:</strong> 8.0/10</p>
+      <p><strong>Year:</strong> 2022</p>
+      <p><strong>Story:</strong> Batman uncovers corruption in Gotham while pursuing the Riddler, a serial killer targeting the elite.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Robert Pattinson</li>
+        <li>Zoë Kravitz</li>
+        <li>Paul Dano</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>Nominated for Best Visual Effects</li>
+        <li>Multiple Critics Awards</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=mqqft2x_Aa4" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  <!-- Modal for Avatar: The Way of Water -->
+<div id="modal-avatar" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/avatar2.jpg" alt="Avatar Poster" class="modal-img" />
+      <h2>Avatar: The Way of Water</h2>
+      <p><strong>Rating:</strong> 7.6/10</p>
+      <p><strong>Year:</strong> 2022</p>
+      <p><strong>Story:</strong> Jake Sully leads his family on a new journey under the sea to protect their home from new threats.</p>
+      <h3>Starring:</h3>
+      <ul><li>Sam Worthington</li><li>Zoe Saldaña</li><li>Sigourney Weaver</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>Oscar Nomination for Best Visual Effects</li></ul>
+      <a href="https://www.youtube.com/watch?v=d9MyW72ELq0" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Spider-Man: No Way Home -->
+  <div id="modal-spiderman" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/spiderman.jpg" alt="Spider-Man Poster" class="modal-img" />
+      <h2>Spider-Man: No Way Home</h2>
+      <p><strong>Rating:</strong> 8.2/10</p>
+      <p><strong>Year:</strong> 2021</p>
+      <p><strong>Story:</strong> Peter Parker faces multiverse madness as he encounters alternate versions of Spider-Man.</p>
+      <h3>Starring:</h3>
+      <ul><li>Tom Holland</li><li>Zendaya</li><li>Andrew Garfield</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>People's Choice Award</li></ul>
+      <a href="https://www.youtube.com/watch?v=JfVOs4VSpmA" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+ <!-- Modal for John Wick 4 -->
+<div id="modal-johnwick" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/JohnWick4.jpg" alt="John Wick 4 Poster" class="modal-img" />
+      <h2>John Wick: Chapter 4</h2>
+      <p><strong>Rating:</strong> 7.8/10</p>
+      <p><strong>Year:</strong> 2023</p>
+      <p><strong>Story:</strong> John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, he must face a new enemy.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Keanu Reeves</li>
+        <li>Donnie Yen</li>
+        <li>Laurence Fishburne</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>Best Action Design (Critics)</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  <!-- Modal for Top Gun: Maverick -->
+<div id="modal-topgun" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/topgun.jpg" alt="Top Gun Poster" class="modal-img" />
+      <h2>Top Gun: Maverick</h2>
+      <p><strong>Rating:</strong> 8.3/10</p>
+      <p><strong>Year:</strong> 2022</p>
+      <p><strong>Story:</strong> After 30 years of service, Maverick trains a new generation of pilots for a dangerous mission.</p>
+      <h3>Starring:</h3>
+      <ul><li>Tom Cruise</li><li>Miles Teller</li><li>Jennifer Connelly</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>Oscar for Best Sound</li><li>6 Nominations</li></ul>
+      <a href="https://www.youtube.com/watch?v=giXco2jaZ_4" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Interstellar -->
+  <div id="modal-interstellar" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/interstellar.jpg" alt="Interstellar Poster" class="modal-img" />
+      <h2>Interstellar</h2>
+      <p><strong>Rating:</strong> 8.7/10</p>
+      <p><strong>Year:</strong> 2014</p>
+      <p><strong>Story:</strong> A team of explorers travels through a wormhole in space in an attempt to ensure humanity's survival.</p>
+      <h3>Starring:</h3>
+      <ul><li>Matthew McConaughey</li><li>Anne Hathaway</li><li>Jessica Chastain</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>Oscar for Best Visual Effects</li></ul>
+      <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Tenet -->
+  <div id="modal-tenet" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/tenet.jpg" alt="Tenet Poster" class="modal-img" />
+      <h2>Tenet</h2>
+      <p><strong>Rating:</strong> 7.3/10</p>
+      <p><strong>Year:</strong> 2020</p>
+      <p><strong>Story:</strong> Armed with only one word, a protagonist journeys through a twilight world of international espionage on a mission that unfolds beyond real time.</p>
+      <h3>Starring:</h3>
+      <ul><li>John David Washington</li><li>Robert Pattinson</li><li>Elizabeth Debicki</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>Oscar for Best Visual Effects</li></ul>
+      <a href="https://www.youtube.com/watch?v=L3pk_TBkihU" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Knives Out -->
+  <div id="modal-knivesout" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/knivesout.jpg" alt="Knives Out Poster" class="modal-img" />
+      <h2>Knives Out</h2>
+      <p><strong>Rating:</strong> 7.9/10</p>
+      <p><strong>Year:</strong> 2019</p>
+      <p><strong>Story:</strong> A detective investigates the death of a patriarch of an eccentric, combative family.</p>
+      <h3>Starring:</h3>
+      <ul><li>Daniel Craig</li><li>Chris Evans</li><li>Ana de Armas</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>Oscar Nominee - Best Original Screenplay</li></ul>
+      <a href="https://www.youtube.com/watch?v=qGqiHJTsRkQ" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for La La Land -->
+  <div id="modal-lalaland" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/lalaland.jpg" alt="La La Land Poster" class="modal-img" />
+      <h2>La La Land</h2>
+      <p><strong>Rating:</strong> 8.0/10</p>
+      <p><strong>Year:</strong> 2016</p>
+      <p><strong>Story:</strong> While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.</p>
+      <h3>Starring:</h3>
+      <ul><li>Ryan Gosling</li><li>Emma Stone</li><li>J.K. Simmons</li></ul>
+      <h3>Awards:</h3>
+      <ul><li>6 Oscars</li><li>Best Director & Actress</li></ul>
+      <a href="https://www.youtube.com/watch?v=0pdqf4P9MB8" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  <!-- Modal for Parasite -->
+<div id="modal-parasite" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/parasite.jpg" alt="Parasite Poster" class="modal-img" />
+      <h2>Parasite</h2>
+      <p><strong>Rating:</strong> 8.5/10</p>
+      <p><strong>Year:</strong> 2019</p>
+      <p><strong>Story:</strong> A poor family schemes to become employed by a wealthy family and infiltrate their household, but secrets and lies lead to a shocking outcome.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Song Kang-ho</li>
+        <li>Choi Woo-shik</li>
+        <li>Park So-dam</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>4 Academy Awards (Best Picture, Best Director, Best Original Screenplay, Best International Feature)</li>
+        <li>Palme d'Or – Cannes Film Festival</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=SEUXfv87Wpk" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  <!-- Modal for Everything Everywhere All at Once -->
+<div id="modal-everything" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/everything.jpg" alt="Everything Poster" class="modal-img" />
+      <h2>Everything Everywhere All at Once</h2>
+      <p><strong>Rating:</strong> 8.0/10</p>
+      <p><strong>Year:</strong> 2022</p>
+      <p><strong>Story:</strong> A Chinese-American woman discovers she must connect with versions of herself across the multiverse to stop a powerful being from destroying reality.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Michelle Yeoh</li>
+        <li>Ke Huy Quan</li>
+        <li>Stephanie Hsu</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>7 Academy Awards (including Best Picture)</li>
+        <li>Golden Globe for Best Actress</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  <!-- Modal for The Whale -->
+<div id="modal-whale" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/whale.jpg" alt="The Whale Poster" class="modal-img" />
+      <h2>The Whale</h2>
+      <p><strong>Rating:</strong> 7.7/10</p>
+      <p><strong>Year:</strong> 2022</p>
+      <p><strong>Story:</strong> A reclusive English teacher living with severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Brendan Fraser</li>
+        <li>Sadie Sink</li>
+        <li>Hong Chau</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>Oscar for Best Actor (Brendan Fraser)</li>
+        <li>Oscar for Best Makeup and Hairstyling</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=nWiQodhMvz4" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for Ford v Ferrari -->
+  <div id="modal-ford" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/fordvferrari.jpg" alt="Ford v Ferrari Poster" class="modal-img" />
+      <h2>Ford v Ferrari</h2>
+      <p><strong>Rating:</strong> 8.1/10</p>
+      <p><strong>Year:</strong> 2019</p>
+      <p><strong>Story:</strong> American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford to challenge Ferrari at Le Mans.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Matt Damon</li>
+        <li>Christian Bale</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>2 Oscars (Editing & Sound Editing)</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=zyYgDtY2AMY" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+    </div>
+  </div>
+  
+  <!-- Modal for The Revenant -->
+  <div id="modal-revenant" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/revenant.jpg" alt="The Revenant Poster" class="modal-img" />
+      <h2>The Revenant</h2>
+      <p><strong>Rating:</strong> 8.0/10</p>
+      <p><strong>Year:</strong> 2015</p>
+      <p><strong>Story:</strong> A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own team.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Leonardo DiCaprio</li>
+        <li>Tom Hardy</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>3 Oscars (Best Actor, Director, Cinematography)</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=LoebZZ8K5N0" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+      
+    </div>
+  </div>
+  
+  <!-- Modal for No Time to Die -->
+  <div id="modal-notime" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/notimetodie.jpg" alt="No Time to Die Poster" class="modal-img" />
+      <h2>No Time to Die</h2>
+      <p><strong>Rating:</strong> 7.3/10</p>
+      <p><strong>Year:</strong> 2021</p>
+      <p><strong>Story:</strong> James Bond has left active service. His peace is short-lived when an old friend turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous technology.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Daniel Craig</li>
+        <li>Rami Malek</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>Oscar for Best Original Song</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=BIhNsAtPbPI" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>
+      
+    </div>
+  </div>
+  
+  <!-- Modal for The Dark Knight -->
+  <div id="modal-darkknight" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img src="../Media/darkknight.jpg" alt="The Dark Knight Poster" class="modal-img" />
+      <h2>The Dark Knight</h2>
+      <p><strong>Rating:</strong> 9.0/10</p>
+      <p><strong>Year:</strong> 2008</p>
+      <p><strong>Story:</strong> Batman faces the Joker, a criminal mastermind who seeks to create chaos and destroy the moral fabric of Gotham.</p>
+      <h3>Starring:</h3>
+      <ul>
+        <li>Christian Bale</li>
+        <li>Heath Ledger</li>
+        <li>Aaron Eckhart</li>
+      </ul>
+      <h3>Awards:</h3>
+      <ul>
+        <li>2 Oscars (including Best Supporting Actor)</li>
+      </ul>
+      <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank" class="trailer-btn">Watch Trailer</a>
+      <a href="booking.html" class="trailer-btn" style="margin-left: 10px;">Book now</a>  
+     
+    </div>
+  </div>
+</body>
+</html>
