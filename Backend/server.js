@@ -47,3 +47,29 @@ app.post("/book", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+app.post("/contact", (req, res) => {
+  const {
+    firstName,
+    lastName,
+    gender,
+    mobile,
+    dob,
+    email,
+    language,
+    message
+  } = req.body;
+
+  const query = `
+    INSERT INTO contacts (firstName, lastName, gender, mobile, dob, email, language, message)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `;
+
+  db.query(query, [firstName, lastName, gender, mobile, dob, email, language, message], (err, result) => {
+    if (err) {
+      console.error("Error inserting contact message:", err);
+      return res.status(500).json({ message: "Failed to send message." });
+    }
+
+    res.status(200).json({ message: "Message sent successfully!" });
+  });
+});
