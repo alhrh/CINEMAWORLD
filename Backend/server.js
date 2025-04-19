@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require('path');  // إضافة استيراد path
 
 const app = express();
 const port = 3000;
@@ -15,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "", // leave it empty unless you set a password in XAMPP
+  password: "", // تأكد من أنك لم تضف كلمة مرور في XAMPP أو ضع الكلمة الصحيحة
   database: "cinemaworld"
 });
 
@@ -26,6 +27,11 @@ db.connect((err) => {
     return;
   }
   console.log("Connected to the database successfully.");
+});
+
+// Route to serve the home page (index.html)
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'index.html'));  // تأكد من المسار الصحيح لملف index.html
 });
 
 // Route to handle booking
@@ -46,30 +52,4 @@ app.post("/book", (req, res) => {
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
-});
-app.post("/contact", (req, res) => {
-  const {
-    firstName,
-    lastName,
-    gender,
-    mobile,
-    dob,
-    email,
-    language,
-    message
-  } = req.body;
-
-  const query = `
-    INSERT INTO contacts (firstName, lastName, gender, mobile, dob, email, language, message)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-  `;
-
-  db.query(query, [firstName, lastName, gender, mobile, dob, email, language, message], (err, result) => {
-    if (err) {
-      console.error("Error inserting contact message:", err);
-      return res.status(500).json({ message: "Failed to send message." });
-    }
-
-    res.status(200).json({ message: "Message sent successfully!" });
-  });
 });
