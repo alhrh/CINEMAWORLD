@@ -204,3 +204,45 @@ td a:hover {
 .trailer-btn:hover {
     background-color: #ff1a1a;
 }
+/* تنسيق نموذج الحجز فقط */
+.booking-form {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.booking-form button {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #ff1a1a;
+}
