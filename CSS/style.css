@@ -6,7 +6,6 @@ body {
     color: #ffffff;
 }
 
-/* رأس الصفحة */
 header {
     background-color: #1a1a1a;
     padding: 20px;
@@ -19,7 +18,6 @@ header h1 {
     margin: 0;
 }
 
-/* التنقل */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -44,7 +42,6 @@ nav ul li a:hover {
     color: #000000;
 }
 
-/* المحتوى الرئيسي */
 main {
     padding: 40px;
     text-align: center;
@@ -61,7 +58,6 @@ main img {
     border-radius: 10px;
 }
 
-/* تنسيق معلومات التواصل */
 section p {
     font-size: 1.1rem;
     margin: 15px 0;
@@ -78,7 +74,6 @@ section a:hover {
     text-decoration: underline;
 }
 
-/* التذييل */
 footer {
     background-color: #1a1a1a;
     text-align: center;
@@ -87,7 +82,6 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* تنسيق الجدول في صفحة About Us */
 table {
     border-collapse: collapse;
     margin-top: 40px;
@@ -120,7 +114,6 @@ td a:hover {
     text-decoration: underline;
 }
 
-/* بطاقات الأفلام */
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -150,7 +143,7 @@ td a:hover {
     border-radius: 8px;
 }
 
-/* مودال الأفلام */
+
 .modal {
     display: none;
     position: fixed;
@@ -204,7 +197,7 @@ td a:hover {
 .trailer-btn:hover {
     background-color: #ff1a1a;
 }
-/* تنسيق نموذج الحجز فقط */
+
 .booking-form {
     background-color: #1a1a1a;
     color: white;
